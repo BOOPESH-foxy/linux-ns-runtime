@@ -1,0 +1,13 @@
+
+[project]
+name = "Linux-ns-runtime"
+version = "0.1.0"
+description = "A Docker-mimic container runtime using Linux Namespaces"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "requests",  # Required for the OCI Puller
+]
+
+[project.scripts]
+Linux-ns-runtime = "main:main"
